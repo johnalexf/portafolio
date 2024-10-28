@@ -23,7 +23,7 @@ body{
 
 
 main{
-    padding-top: 75px;
+    padding-top: 90px;
 }
 
 h1{
@@ -56,17 +56,24 @@ ul{
 }
 
 li{
-    padding: 0 10px;
+    padding: 0 15px;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* Fin Estilos del navbar */
 
 /*  Inicio Títulos de separación de secciones */
 .titulosIntermedios{
+    height: 60px;
     background-color: #044867d7;
     padding: 0 20px;
     border-radius: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Fin Títulos de separación de secciones */
 
@@ -198,8 +205,10 @@ li{
 }
 
 .logo{
+    display: flex;
+    justify-content: center;
     margin: 20px;
-    width: 150px;
+    width: 130px;
     border: 1px solid black;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.907);
@@ -207,8 +216,8 @@ li{
 }
 
 .logo img{
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
 }
 
 
@@ -228,22 +237,18 @@ li{
 .bicicleta h1, .programar h1{
     margin: 0px 0px 20px;
 }
-.video{
+.video, .imagenProgramacion{
     border-radius: 30px;
     width: 470px;
-    height: auto;
+    height: 264px;
 }
 
-
-
-
-
-
-
-
-
-
-
+.imagenProgramacion{
+    background-image: url('../img/programacion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 
