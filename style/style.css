@@ -143,11 +143,22 @@ a{
 .imagenCard{
     width: 250px;
     height: 300px;
-    background-image: url("../img/gourmetbox.PNG") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius : 20px;
+}
+
+.gourmetbox{
+    background-image: url("../img/gourmetbox.PNG") ;
+}
+
+.tcompra{
+    background-image: url("../img/tcompra.PNG") ;
+}
+
+.triqui{
+    background-image: url("../img/triqui.PNG") ;
 }
 
 .infoProyecto h3{
