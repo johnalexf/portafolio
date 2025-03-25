@@ -3,15 +3,13 @@ body{
     margin: 0;
     height: 100%;
     width: 100%;
-    background-image: url("../img/fondo.jpg");
-    background-repeat: no-repeat;
+    background: url("../img/fondo.jpg") no-repeat fixed ;
     background-size: cover; 
-    background-attachment: fixed;
     position: relative;
-    /* #2B2E33 */
 }
+ /* #2B2E33 */
 
-body::before{
+body::{
     content: "";
     position: absolute;
     top: 0;
@@ -20,7 +18,6 @@ body::before{
     height: 100%;
     background-color: #2273ff15;
     z-index: -1;
-   
 }
 
 *{
@@ -36,7 +33,7 @@ main{
 }
 
 h1{
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 
