@@ -16,6 +16,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/styleNavbar.css">
     <link rel="stylesheet" href="./style/styleProyectos.css">
 
     <title>Portafolio John Forero</title>
@@ -24,14 +25,23 @@
 <body id="inicio">
 
     <nav class="navbar">
-        <h1>John Alexander Forero Rubio</h1>
-        <ul>
-            <li><a href="#perfil">Perfil</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#pasiones">Pasiones</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+        <div class="nombreNavbar">
+            <h1>John Alexander Forero Rubio</h1>
+        </div>
+        <div class="botonNavbar">
+            <a onclick="desplegarMenuNavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+        <div class="menuNavbar mostrar" id="menuNavbar">
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#pasiones">Pasiones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>

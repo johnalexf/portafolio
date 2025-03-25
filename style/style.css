@@ -43,48 +43,6 @@ a{
 }
 
 
-/* Inicio Estilos del navbar */
-.navbar {
-    /* Posicionamiento */
-    position: fixed;
-    z-index: 2;
-
-    /* Modelo de caja */
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    box-sizing: border-box; /* Incluye el padding en el ancho */
-
-    /* Apariencia */
-    background-color: #434954;
-    padding: 0 20px;
-}
-
-.navbar ul{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    list-style-type: none;
-}
-
-.navbar li{
-    padding: 0 15px;
-}
-
-.navbar a{
-    &:hover{
-        border-bottom: white 2px solid;
-    }
-
-    &:active{
-        color: #c2c2c2;
-        border-bottom: #9e9e9e 2px solid;
-    }
-}
-
-/* Fin Estilos del navbar */
 
 /*  Inicio Títulos de separación de secciones */
 .titulosIntermedios {
