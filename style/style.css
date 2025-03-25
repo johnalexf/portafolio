@@ -93,21 +93,22 @@ a{
     justify-content: center;
     align-items: center;
     height: 55px;
-    padding: 0 20px;
 
     /* Apariencia */
     background-color: #044867f3;
 }
 /* Fin Títulos de separación de secciones */
 
-
+section{
+    margin: 50px auto;
+    /* border: 5px solid red; */
+}
 
 /* Inicio Estilos del contenedor del perfil */
 .perfil{
     display: flex;
     justify-content: space-between;
     width: 600px;
-    margin: 50px auto;
     padding: 50px;
 
     background-color: #506280f9;
@@ -137,10 +138,6 @@ a{
 
 /* Fin Estilos del contenedor del perfil */
 
-.proyectos, .pasiones, .habilidades{
-    margin: 60px auto;
-    padding: 0 50px;
-}
 
 .proyectos, .pasiones {
     max-width: 1200px;
@@ -151,7 +148,7 @@ a{
 }
 
 @media (width < 690px) {
-    .proyectos, .pasiones {
+    .pasiones {
         grid-template-columns: 1fr ;
     }
 }
