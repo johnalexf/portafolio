@@ -33,40 +33,50 @@ main{
 }
 
 h1{
-    /* font-weight: 700; */
+    font-weight: 600;
+    /* font-size: 1.6rem; */
 }
 
 
 /* Inicio Estilos del navbar */
-nav{
-    width: 100%;
+.navbar {
+    /* Posicionamiento */
     position: fixed;
-    background-color: #434954;
-    padding: 0 20px;
-    border-radius: 20px;
+    z-index: 2;
+
+    /* Modelo de caja */
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /* Con border box se hace que el padding haga parte del tamaño width evitando que lo sobrepase */
-    box-sizing: border-box;
-    z-index: 2;
+    width: 100%;
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+
+    /* Apariencia */
+    background-color: #434954;
+    padding: 0 20px;
 }
 
-nav ul{
+.navbar ul{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-
-ul{
     list-style-type: none;
 }
 
-li{
+.navbar li{
     padding: 0 15px;
 }
 
-a{
+.navbar a{
     text-decoration: none;
+
+    &:hover{
+        border-bottom: white 2px solid;
+    }
+
+    &:active{
+        color: #c2c2c2;
+        border-bottom: #9e9e9e 2px solid;
+    }
 }
 
 /* Fin Estilos del navbar */
