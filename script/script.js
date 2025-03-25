@@ -1,20 +1,42 @@
 let menuNavbar = document.querySelector('#menuNavbar');
-let desplegadoMenuNavbar = true;
+let desplegadoMenuNavbar = false;
+
+function mostrarMenuNavbar(){
+    menuNavbar.classList.remove('ocultar');
+    menuNavbar.classList.add('mostrar');
+}
+
+function ocultarMenuNavbar(){
+    menuNavbar.classList.remove('mostrar');
+    menuNavbar.classList.add('ocultar');
+}
 
 function desplegarMenuNavbar(){
     if(!desplegadoMenuNavbar){
         desplegadoMenuNavbar = true;
-        menuNavbar.classList.remove('ocultar');
-        menuNavbar.classList.add('mostrar');
+        mostrarMenuNavbar();
         console.log("mostrar")
     }else{
         desplegadoMenuNavbar = false;
-        menuNavbar.classList.remove('mostrar');
-        menuNavbar.classList.add('ocultar');
+        ocultarMenuNavbar();
         console.log("ocultar")
 
     }
 }
+
+
+function detectarCambioVentana() {
+    const anchoVentana = window.innerWidth;
+  
+    anchoVentana < 992 ? 
+    ocultarMenuNavbar():
+    mostrarMenuNavbar()
+   
+}
+  
+  // Ejecutar la función al cargar la página y al cambiar el tamaño de la ventana
+detectarCambioVentana();
+window.addEventListener('resize', detectarCambioVentana);
 
 
 
