@@ -9,7 +9,7 @@ body{
 }
  /* #2B2E33 */
 
-body::after{
+body::before{
     content: "";
     position: absolute;
     top: 0;
