@@ -1,0 +1,110 @@
+
+/*Inicio Estilos para el contenedor de proyectos */
+
+.cardProyecto{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    justify-items: center;
+    gap: 15px;
+    max-width: 550px;
+    padding: 10px;
+
+    background-color: #506280;
+    border-radius : 20px;
+    border: 2px black solid;
+    box-shadow: 10px 8px #0005;
+}
+
+.imagenCard{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border: 1px black solid;
+    border-radius : 20px;
+    cursor: pointer;
+}
+
+.imagenCard img{
+    width: 100%;
+    height: 100%;
+    border-radius : 20px;
+}
+
+.difuminado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+    transition: 1s ease;
+
+    a{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.botonCard{
+    color: #2272FF;
+    font-size: 35px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease;
+
+    &:hover{
+        /* color: #3F76D4; */
+        color: white;
+    }
+}
+
+.imagenCard:hover .difuminado{
+        transition: 1s ease;
+        background-color: rgba(22, 22, 22, 0.727);
+        backdrop-filter: blur(2px);
+}
+
+.infoProyecto{
+    /* border: 2px solid red; */
+    display: grid;
+    align-content: space-between;
+    gap: 5px;
+    /* margin-right: 10px; */
+}
+
+.infoProyecto .tituloCard{
+    padding-bottom: 5px;
+    place-content: center;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.infoProyecto .textoCard{
+    /* text-align: justify; */
+}
+
+.infoProyecto .linksCard{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.infoProyecto .footerCard{
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+
+@media (width < 1200px) {
+    .cardProyecto{
+        grid-template-columns: 1fr;
+        padding: 4%;
+    }
+}
+
+/* Fin Estilos para el contenedor de proyectos */
