@@ -82,14 +82,16 @@ h1{
 /* Fin Estilos del navbar */
 
 /*  Inicio Títulos de separación de secciones */
-.titulosIntermedios{
-    height: 60px;
-    background-color: #044867d7;
-    padding: 0 20px;
-    border-radius: 10px;
+.titulosIntermedios {
+    /* Modelo de caja */
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 55px;
+    padding: 0 20px;
+
+    /* Apariencia */
+    background-color: #044867f3;
 }
 /* Fin Títulos de separación de secciones */
 
