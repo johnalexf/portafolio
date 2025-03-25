@@ -6,14 +6,16 @@ let tamañoTexto = texto.length;
 
 
 function maquinaEscribir(){
-    console.log("hola");
     frasePrincipal.innerHTML = ` <h2> ${texto.substring(0,indice++)}|</h2>`;
     if(indice <= tamañoTexto){
-        setTimeout(maquinaEscribir, 70);
+        setTimeout(maquinaEscribir, 50);
     }else{
         frasePrincipal.innerHTML = ` <h2> ${texto.substring(0,indice++)}</h2>`; 
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    maquinaEscribir();
+  });
 
-maquinaEscribir();
+

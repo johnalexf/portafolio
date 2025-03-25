@@ -104,18 +104,16 @@ h1{
     width: 600px;
     margin: 50px auto;
     padding: 50px;
-    background-color: #506280ed;
+
+    background-color: #506280f9;
     border-radius: 30px;
 }
 
 .imagenPerfil{
     width: 250px;
     height: 250px;
-    background-image: url("../img/perfil1.JPG");
-    background-image: url("../img/perfil.png");
+    background: url("../img/perfil.png") no-repeat center;
     background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 100%;
 }
 
