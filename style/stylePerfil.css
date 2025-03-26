@@ -34,7 +34,7 @@
 @media(max-width: 730px){
     .perfil{
         flex-direction: column;
-        max-width: 340px;
+        max-width: 430px;
         width: auto;
         height: 540px;
         padding: 0px;
@@ -42,10 +42,10 @@
     }
 }
 
-@media(max-width: 342px){
+@media(max-width: 450px){
     .perfil{
-        margin-left:  1%;
-        margin-right:  1%;
+        margin-left:  3%;
+        margin-right:  3%;
     }
 }
 /* Fin Estilos del contenedor del perfil */

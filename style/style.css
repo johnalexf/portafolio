@@ -62,11 +62,11 @@ section{
 
 
 
-.proyectos, .pasiones {
+.pasiones {
     max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    row-gap: 50px;
     justify-items: center;
 }
 
