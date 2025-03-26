@@ -58,7 +58,6 @@ a{
 
 section{
     margin: 50px auto;
-    /* border: 5px solid red; */
 }
 
 
@@ -72,6 +71,10 @@ section{
 }
 
 @media (width < 690px) {
+    section{
+        margin: 25px auto;
+    }
+
     .pasiones {
         grid-template-columns: 1fr ;
     }
