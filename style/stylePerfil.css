@@ -1,0 +1,51 @@
+/* Inicio Estilos del contenedor del perfil */
+.perfil{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+    padding: 50px 17px;
+    border-radius: 20px;
+
+    background-color: #506280f9;
+}
+
+.imagenPerfil{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+
+    background: url("../img/perfil.png") no-repeat center;
+    background-size: contain;
+}
+
+.frasePrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 210px;
+    width: 250px;
+    border-radius: 30px;
+
+    text-align: center;
+    line-height: 35px;
+}
+
+@media(max-width: 730px){
+    .perfil{
+        flex-direction: column;
+        max-width: 340px;
+        width: auto;
+        height: 540px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width: 342px){
+    .perfil{
+        margin-left:  1%;
+        margin-right:  1%;
+    }
+}
+/* Fin Estilos del contenedor del perfil */

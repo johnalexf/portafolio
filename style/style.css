@@ -43,7 +43,6 @@ a{
 }
 
 
-
 /*  Inicio Títulos de separación de secciones */
 .titulosIntermedios {
     /* Modelo de caja */
@@ -62,39 +61,6 @@ section{
     /* border: 5px solid red; */
 }
 
-/* Inicio Estilos del contenedor del perfil */
-.perfil{
-    display: flex;
-    justify-content: space-between;
-    width: 600px;
-    padding: 50px;
-
-    background-color: #506280f9;
-    border-radius: 30px;
-}
-
-.imagenPerfil{
-    width: 250px;
-    height: 250px;
-
-    background: url("../img/perfil.png") no-repeat center;
-    background-size: contain;
-    border-radius: 100%;
-}
-
-.frasePrincipal{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 250px;
-
-    border-radius: 30px;
-    line-height: 35px;
-}
-
-
-/* Fin Estilos del contenedor del perfil */
 
 
 .proyectos, .pasiones {

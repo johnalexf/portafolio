@@ -15,29 +15,19 @@ function desplegarMenuNavbar(){
     if(!desplegadoMenuNavbar){
         desplegadoMenuNavbar = true;
         mostrarMenuNavbar();
-        console.log("mostrar")
     }else{
         desplegadoMenuNavbar = false;
         ocultarMenuNavbar();
-        console.log("ocultar")
-
     }
 }
 
-
 function detectarCambioVentana() {
     const anchoVentana = window.innerWidth;
-  
     anchoVentana < 992 ? 
     ocultarMenuNavbar():
     mostrarMenuNavbar()
-   
 }
   
-  // Ejecutar la función al cargar la página y al cambiar el tamaño de la ventana
-detectarCambioVentana();
-window.addEventListener('resize', detectarCambioVentana);
-
 
 let frasePrincipal = document.getElementById('frasePrincipal');
 
@@ -47,16 +37,21 @@ let tamañoTexto = texto.length;
 
 
 function maquinaEscribir(){
-    frasePrincipal.innerHTML = ` <h2> ${texto.substring(0,indice++)}|</h2>`;
+    frasePrincipal.innerHTML = ` <h2 style="font-style: italic;"> ${texto.substring(0,indice++)}|</h2>`;
     if(indice <= tamañoTexto){
         setTimeout(maquinaEscribir, 50);
     }else{
-        frasePrincipal.innerHTML = ` <h2> ${texto.substring(0,indice++)}</h2>`; 
+        frasePrincipal.innerHTML = ` <h2 style="font-style: italic;"> ${texto.substring(0,indice++)}</h2>`; 
     }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    maquinaEscribir();
+    
+    // Ejecutar la función al cargar la página y al cambiar el tamaño de la ventana
+    setTimeout(detectarCambioVentana, 1000);
+    window.addEventListener('resize', detectarCambioVentana);
+    
+    setTimeout(maquinaEscribir, 1000);
   });
 
 
